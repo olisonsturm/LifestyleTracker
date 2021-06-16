@@ -9,16 +9,36 @@
             android:icon="@drawable/ic_menu_home"
             android:title="@string/menu_home" />
     </group>
-    <item android:title="@string/stats" >
+    <item android:title="@string/stats">
         <menu>
-            <item
-                android:id="@+id/nav_yesterday"
-                android:icon="@drawable/ic_menu_yesterday"
-                android:title="@string/menu_yesterday" />
-            <item
-                android:id="@+id/nav_all_time"
-                android:icon="@drawable/ic_menu_all_time"
-                android:title="@string/menu_all_time" />
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_yesterday"
+                    android:icon="@drawable/ic_menu_yesterday"
+                    android:title="@string/menu_yesterday" />
+                <item
+                    android:id="@+id/nav_all_time"
+                    android:icon="@drawable/ic_menu_all_time"
+                    android:title="@string/menu_all_time" />
+            </group>
         </menu>
     </item>
+    <group android:id="@+id/stuff">
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_menu_settings"
+            android:title="@string/settings" />
+        <item
+            android:id="@+id/nav_privacy"
+            android:icon="@drawable/ic_menu_privacy"
+            android:title="@string/privacy" />
+        <item
+            android:id="@+id/nav_update"
+            android:icon="@drawable/ic_menu_update"
+            android:title="@string/update" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_menu_about"
+            android:title="@string/about" />
+    </group>
 </menu>
