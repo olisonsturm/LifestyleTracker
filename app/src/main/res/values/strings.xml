@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Lifestyle Tracker</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Lifestyle Tracker</string>
+    <string name="nav_header_subtitle">Control your life. And enjoy!</string>
+    <string name="nav_header_desc">Control your life. And enjoy!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_yesterday">Yesterday</string>
+    <string name="menu_all_time">All Time</string>
+    <string name="stats">Stats</string>
+</resources>
