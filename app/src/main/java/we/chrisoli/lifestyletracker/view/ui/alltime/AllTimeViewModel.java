@@ -1,4 +1,4 @@
-package we.chrisoli.lifestyletracker.ui.alltime;
+package we.chrisoli.lifestyletracker.view.ui.alltime;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

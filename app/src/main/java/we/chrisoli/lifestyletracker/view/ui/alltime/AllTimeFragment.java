@@ -1,4 +1,4 @@
-package we.chrisoli.lifestyletracker.ui.yesterday;
+package we.chrisoli.lifestyletracker.view.ui.alltime;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,23 +12,23 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
-import we.chrisoli.lifestyletracker.databinding.FragmentYesterdayBinding;
+import we.chrisoli.lifestyletracker.databinding.FragmentAllTimeBinding;
 
-public class YesterdayFragment extends Fragment {
+public class AllTimeFragment extends Fragment {
 
-    private YesterdayViewModel yesterdayViewModel;
-    private FragmentYesterdayBinding binding;
+    private AllTimeViewModel allTimeViewModel;
+    private FragmentAllTimeBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        yesterdayViewModel =
-                new ViewModelProvider(this).get(YesterdayViewModel.class);
+        allTimeViewModel =
+                new ViewModelProvider(this).get(AllTimeViewModel.class);
 
-        binding = FragmentYesterdayBinding.inflate(inflater, container, false);
+        binding = FragmentAllTimeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textYesterday;
-        yesterdayViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        final TextView textView = binding.textAllTime;
+        allTimeViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);

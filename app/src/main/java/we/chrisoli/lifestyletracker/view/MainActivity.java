@@ -1,4 +1,4 @@
-package we.chrisoli.lifestyletracker;
+package we.chrisoli.lifestyletracker.view;
 
 import android.os.Bundle;
 import android.view.View;
@@ -14,6 +14,7 @@ import androidx.navigation.ui.NavigationUI;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 
+import we.chrisoli.lifestyletracker.R;
 import we.chrisoli.lifestyletracker.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
