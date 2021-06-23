@@ -11,35 +11,56 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import we.chrisoli.lifestyletracker.R;
+import we.chrisoli.lifestyletracker.adapter.HomeAdapter;
 import we.chrisoli.lifestyletracker.databinding.FragmentHomeBinding;
+import we.chrisoli.lifestyletracker.db.DataAccess;
+import we.chrisoli.lifestyletracker.model.Type;
+import we.chrisoli.lifestyletracker.model.User;
 
 public class HomeFragment extends Fragment {
 
-    private HomeViewModel homeViewModel;
-    private FragmentHomeBinding binding;
+    private User user;
+
+    private RecyclerView recyclerView;
+    private HomeAdapter adapter;
+    private List<Type> typeList;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        homeViewModel =
-                new ViewModelProvider(this).get(HomeViewModel.class);
+        View view = inflater.inflate(R.layout.fragment_home, container, false);
 
-        binding = FragmentHomeBinding.inflate(inflater, container, false);
-        View root = binding.getRoot();
+        user = user.getInstance;
 
-        final TextView textView = binding.textHome;
-        homeViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
-        return root;
+        recyclerView = view.findViewById(R.id.recycler_view);
+
+        typeList = new ArrayList<>();
+        DataAccess data = new DataAccess();
+        typeList.add(data.getWater(user.getUid()));
+        typeList.add(data.getPee(user.getUid()));
+        typeList.add(data.getShit(user.getUid()));
+        adapter = new HomeAdapter(getContext(), typeList);
+
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
+        recyclerView.setAdapter(adapter);
+        recyclerView.setLayoutManager(linearLayoutManager);
+
+        return view;
     }
 
     @Override
-    public void onDestroyView() {
-        super.onDestroyView();
-        binding = null;
+    public void onStart() {
+        super.onStart();
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
     }
 }

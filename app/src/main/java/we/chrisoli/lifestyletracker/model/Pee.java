@@ -1,6 +1,6 @@
 package we.chrisoli.lifestyletracker.model;
 
-public class Pee {
+public class Pee implements Type {
 
     String pid; // pk
     String amount;
@@ -48,5 +48,10 @@ public class Pee {
 
     public void setUid(String uid) {
         this.uid = uid;
+    }
+
+    @Override
+    public int getType() {
+        return Type.TYPE_PEE;
     }
 }

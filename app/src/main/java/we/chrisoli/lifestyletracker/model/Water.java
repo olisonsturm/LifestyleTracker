@@ -1,6 +1,6 @@
 package we.chrisoli.lifestyletracker.model;
 
-public class Water {
+public class Water implements Type {
 
     String wid; // pk
     String amount;
@@ -47,5 +47,10 @@ public class Water {
 
     public void setUid(String uid) {
         this.uid = uid;
+    }
+
+    @Override
+    public int getType() {
+        return Type.TYPE_WATER;
     }
 }

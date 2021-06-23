@@ -1,6 +1,6 @@
 package we.chrisoli.lifestyletracker.model;
 
-public class Shit {
+public class Shit implements Type {
 
     String sid; // pk
     String amount;
@@ -48,5 +48,10 @@ public class Shit {
 
     public void setUid(String uid) {
         this.uid = uid;
+    }
+
+    @Override
+    public int getType() {
+        return Type.TYPE_SHIT;
     }
 }
