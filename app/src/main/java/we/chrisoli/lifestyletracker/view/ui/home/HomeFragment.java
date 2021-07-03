@@ -1,6 +1,7 @@
 package we.chrisoli.lifestyletracker.view.ui.home;
 
 import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -36,15 +37,15 @@ public class HomeFragment extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
-        user = user.getInstance;
+        user = User.getInstance();
 
         recyclerView = view.findViewById(R.id.recycler_view);
 
         typeList = new ArrayList<>();
         DataAccess data = new DataAccess();
-        typeList.add(data.getWater(user.getUid()));
-        typeList.add(data.getPee(user.getUid()));
-        typeList.add(data.getShit(user.getUid()));
+        typeList.add(data.getWater(user));
+        typeList.add(data.getPee(user));
+        typeList.add(data.getShit(user));
         adapter = new HomeAdapter(getContext(), typeList);
 
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
