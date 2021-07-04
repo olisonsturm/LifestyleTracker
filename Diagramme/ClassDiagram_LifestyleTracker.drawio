@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-07-04T14:46:01.654Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36" etag="8l51DOya-wruQ2L4lrwG" version="14.8.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-07-04T16:59:40.126Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36" etag="PaDK7AlO5BqLoiK5tk4l" version="14.8.3" type="github">
   <diagram id="NWYkFUK9LSVxFtsLqtCG" name="Page-1">
-    <mxGraphModel dx="868" dy="450" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1108" dy="450" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -78,8 +78,8 @@
           <mxGeometry y="110" width="50" height="140" as="geometry" />
         </mxCell>
         <mxCell id="OrH7R6QqTdeNsJV3QqQG-42" value="MySQLConnection" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1" collapsed="1">
-          <mxGeometry x="875" y="432" width="140" height="26" as="geometry">
-            <mxRectangle x="680" y="316" width="160" height="150" as="alternateBounds" />
+          <mxGeometry x="590" y="356" width="140" height="26" as="geometry">
+            <mxRectangle x="590" y="356" width="160" height="150" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="OrH7R6QqTdeNsJV3QqQG-43" value="+host: String&#xa;+port: String &#xa;+db: String &#xa;+username: String &#xa;+password: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="OrH7R6QqTdeNsJV3QqQG-42" vertex="1">
@@ -322,7 +322,7 @@
         </mxCell>
         <mxCell id="Ti2GQdQaW2jY4-_UlOmM-95" value="LoginActivity extends" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" collapsed="1" parent="1">
           <mxGeometry x="590" y="316" width="160" height="26" as="geometry">
-            <mxRectangle x="320" y="40" width="220" height="154" as="alternateBounds" />
+            <mxRectangle x="590" y="316" width="220" height="154" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="Ti2GQdQaW2jY4-_UlOmM-96" value="-first:EditText&#xa;-last:EditText &#xa;-login:Button &#xa;-loading:ProgressBar " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Ti2GQdQaW2jY4-_UlOmM-95">
