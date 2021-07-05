@@ -4,40 +4,138 @@ import com.BoardiesITSolutions.AndroidMySQLConnector.Connection;
 import com.BoardiesITSolutions.AndroidMySQLConnector.Exceptions.InvalidSQLPacketException;
 import com.BoardiesITSolutions.AndroidMySQLConnector.Exceptions.MySQLConnException;
 import com.BoardiesITSolutions.AndroidMySQLConnector.Exceptions.MySQLException;
+import com.BoardiesITSolutions.AndroidMySQLConnector.Exceptions.SQLColumnNotFoundException;
 import com.BoardiesITSolutions.AndroidMySQLConnector.IConnectionInterface;
+import com.BoardiesITSolutions.AndroidMySQLConnector.IResultInterface;
+import com.BoardiesITSolutions.AndroidMySQLConnector.MySQLRow;
+import com.BoardiesITSolutions.AndroidMySQLConnector.ResultSet;
+import com.BoardiesITSolutions.AndroidMySQLConnector.Statement;
 
 import java.io.IOException;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
 
-import we.chrisoli.lifestyletracker.model.Pee;
-import we.chrisoli.lifestyletracker.model.Shit;
 import we.chrisoli.lifestyletracker.model.User;
-import we.chrisoli.lifestyletracker.model.Water;
 
 
 public class DataAccess {
 
-    private java.sql.Connection con = null;
+    private Connection con = null;
     String host = "35.234.92.142";
     int port = 3306;
-    String db = "freedbtech_LifestyleTracker";
-    String username = "freedbtech_olichris";
+    String db = "freedbtech_lifestyletracker";
+    String username = "freedbtech_chrisoli";
     String password = "tracker";
 
     public DataAccess() {
         startConnection();
     }
 
-    public java.sql.Connection startConnection() {
+    public Connection startConnection() {
+        con = new Connection(host, username, password, port, new IConnectionInterface() {
+            @Override
+            public void actionCompleted() {
+                System.out.println("[MySQL] Connection started");
+            }
 
+            @Override
+            public void handleInvalidSQLPacketException(InvalidSQLPacketException ex) {
+                System.out.println("[MySQL] " + ex.getMessage());
+            }
 
-        // Verbindung zur JDBC-Datenbank herstellen.
-            /*con = DriverManager.getConnection("jdbc:mysql://" + host + ":" + port + "/" + db + "?" + "user="
-                    + username + "&" + "password=" + password);*/
-        con = (java.sql.Connection) new Connection(host, username, password, port, db, new IConnectionInterface() {
+            @Override
+            public void handleMySQLException(MySQLException ex) {
+                System.out.println("[MySQL] " + ex.getMessage());
+            }
+
+            @Override
+            public void handleIOException(IOException ex) {
+                System.out.println("[MySQL] " + ex.getMessage());
+            }
+
+            @Override
+            public void handleMySQLConnException(MySQLConnException ex) {
+                System.out.println("[MySQL] " + ex.getMessage());
+            }
+
+            @Override
+            public void handleException(Exception exception) {
+                System.out.println("[MySQL] " + exception.getMessage());
+            }
+        });
+        return con;
+    }
+
+    public void closeConnection() {
+        con.close();
+    }
+
+    //------------------------------------------------------------------
+    // User
+    public User getUser(String firstname, String lastname) {
+        User user = new User();
+
+        // Anfrage-Statement erzeugen
+        Statement statement = con.createStatement();
+
+        // Ergebnistabelle erzeugen und abholen
+        String sql = "Select * from user where firstname ='" + firstname + "' lastname ='" + lastname + "'";
+        statement.executeQuery(sql, new IResultInterface() {
+            @Override
+            public void executionComplete(ResultSet resultSet) {
+                // Ergebnissätze durchlaufen
+                MySQLRow row;
+                while ((row = resultSet.getNextRow()) != null) {
+                    try {
+                        user.setUid(row.getString("uid")); // pk
+                        user.setFirstname(row.getString("firstname"));
+                        user.setLastname(row.getString("lastname"));
+                    } catch (SQLColumnNotFoundException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+
+            @Override
+            public void handleInvalidSQLPacketException(InvalidSQLPacketException ex) {
+
+            }
+
+            @Override
+            public void handleMySQLException(MySQLException ex) {
+
+            }
+
+            @Override
+            public void handleIOException(IOException ex) {
+
+            }
+
+            @Override
+            public void handleMySQLConnException(MySQLConnException ex) {
+
+            }
+
+            @Override
+            public void handleException(Exception ex) {
+
+            }
+        });
+        return user;
+    }
+
+    public boolean setUser(User user) {
+
+        // Anfrage-Statement erzeugen
+        Statement statement = con.createStatement();
+
+        // Insert-Statement erzeugen (Fragezeichen werden später ersetzt).
+        String sql = "INSERT INTO user(uid, firstname, lastname, birth) " +
+                "VALUES(null, #, #, #) ON DUPLICATE KEY UPDATE uid = '" + user.getUid() + "'";
+        // Fragezeichen durch Parameter ersetzen
+        sql.replaceFirst("#", user.getFirstname());
+        sql.replaceFirst("#", user.getLastname());
+
+        // SQL ausführen
+        statement.execute(sql, new IConnectionInterface() {
             @Override
             public void actionCompleted() {
 
@@ -68,76 +166,19 @@ public class DataAccess {
 
             }
         });
-        return con;
-    }
-
-    public void closeConnection() {
-        try {
-            con.close();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-    }
-
-    //------------------------------------------------------------------
-    // User
-    public User getUser(String uid) {
-        User user = new User();
-
-        // Anfrage-Statement erzeugen
-        Statement query;
-        try {
-            query = con.createStatement();
-
-            // Ergebnistabelle erzeugen und abholen
-            String sql = "Select * from user where uid ='" + uid + "'";
-            ResultSet result = query.executeQuery(sql);
-
-            // Ergebnissätze durchlaufen
-            while (result.next()) {
-                user.setUid(result.getString("uid")); // pk
-                user.setFirstname(result.getString("firstname"));
-                user.setLastname(result.getString("lastname"));
-                user.setBirth(result.getDate("birth"));
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-
-        return user;
-    }
-
-    public boolean setUser(User user) {
-        try {
-            // Insert-Statement erzeugen (Fragezeichen werden später ersetzt).
-            String sql = "INSERT INTO user(uid, firstname, lastname, birth) " +
-                    "VALUES(null, ?, ?, ?) ON DUPLICATE KEY UPDATE uid = '" + user.getUid() + "'";
-            PreparedStatement preparedStatement = con.prepareStatement(sql);
-            // Fragezeichen durch Parameter ersetzen
-            preparedStatement.setString(1, user.getFirstname());
-            preparedStatement.setString(2, user.getLastname());
-            //preparedStatement.setDate(3, user.getBirth());
-
-            // SQL ausführen
-            preparedStatement.executeUpdate();
-
-        } catch (SQLException e) {
-            e.printStackTrace();
-            return false;
-        }
 
         return true;
     }
 
     // --------------------------------------------------------------
     // Wasser
-    public Water getWater(User user) {
+    /*public Water getWater(User user) {
         Water water = new Water();
 
         // Anfrage-Statement erzeugen
-        Statement query;
+        Statement statement;
         try {
-            query = con.createStatement();
+            statement = con.createStatement();
 
             // Ergebnistabelle erzeugen und abholen
             String sql = "Select * from water where uid ='" + user.getUid() + "'";
@@ -280,5 +321,5 @@ public class DataAccess {
         }
 
         return true;
-    }
+    }*/
 }
