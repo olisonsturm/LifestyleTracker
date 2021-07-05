@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-07-05T14:12:51.385Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36" etag="PQ-OP2qDpNJ545s0muB1" version="14.8.4" type="github">
+<mxfile host="app.diagrams.net" modified="2021-07-05T14:17:52.561Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36" etag="F1_dA1VFUqIa9af6skOc" version="14.8.4" type="github">
   <diagram id="NWYkFUK9LSVxFtsLqtCG" name="Page-1">
     <mxGraphModel dx="2131" dy="1698" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -413,7 +413,7 @@
           <mxGeometry x="630" y="332" width="40" height="20" as="geometry" />
         </mxCell>
         <mxCell id="RZG1Sk_j14Lmqz5CqODX-134" value="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="-70" y="1480" width="40" height="20" as="geometry" />
+          <mxGeometry x="-120" y="1480" width="40" height="20" as="geometry" />
         </mxCell>
         <mxCell id="RZG1Sk_j14Lmqz5CqODX-135" value="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="50" y="1480" width="40" height="20" as="geometry" />
@@ -459,6 +459,24 @@
         </mxCell>
         <mxCell id="-dmJueuZtDUGm3YI3eYa-17" value="Gibt Daten" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="-75" y="1207" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="-dmJueuZtDUGm3YI3eYa-18" value="Bildet RecycleView" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="242.5" y="1624" width="137.5" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="-dmJueuZtDUGm3YI3eYa-19" value="Bildet RecycleView" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="90" y="1624" width="137.5" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="-dmJueuZtDUGm3YI3eYa-20" value="Bildet RecycleView" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-105" y="1624" width="137.5" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="-dmJueuZtDUGm3YI3eYa-21" value="Übergibt CardView" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="267.5" y="1470" width="130" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="-dmJueuZtDUGm3YI3eYa-22" value="Übergibt CardView" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="97.5" y="1470" width="130" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="-dmJueuZtDUGm3YI3eYa-23" value="Übergibt CardView" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-85" y="1470" width="130" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
