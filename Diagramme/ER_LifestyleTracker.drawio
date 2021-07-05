@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-07-03T11:41:22.605Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36" etag="891Oq6Au_iKxJEkJQlJe" version="14.8.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-07-05T09:30:15.842Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36" etag="LBIuNEvfy9YtQqqpiMFV" version="14.8.4" type="github">
   <diagram id="shyNUnFGkH95yPOg342h" name="Page-1">
-    <mxGraphModel dx="868" dy="450" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1875" dy="1046" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -17,9 +17,6 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="lOX9jsM3rJMvj_CDqlID-58" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="lOX9jsM3rJMvj_CDqlID-1" target="lOX9jsM3rJMvj_CDqlID-57" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="lOX9jsM3rJMvj_CDqlID-60" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;" parent="1" source="lOX9jsM3rJMvj_CDqlID-1" target="lOX9jsM3rJMvj_CDqlID-59" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="lOX9jsM3rJMvj_CDqlID-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="lOX9jsM3rJMvj_CDqlID-1" target="lOX9jsM3rJMvj_CDqlID-5" edge="1">
@@ -124,9 +121,6 @@
         <mxCell id="lOX9jsM3rJMvj_CDqlID-57" value="lastname" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="90" y="370" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="lOX9jsM3rJMvj_CDqlID-59" value="birth" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
-          <mxGeometry x="100" y="540" width="100" height="40" as="geometry" />
-        </mxCell>
         <mxCell id="lOX9jsM3rJMvj_CDqlID-64" value="1" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="1" vertex="1">
           <mxGeometry x="280" y="450" width="40" height="30" as="geometry" />
         </mxCell>
@@ -145,19 +139,19 @@
         <mxCell id="lOX9jsM3rJMvj_CDqlID-71" value="n" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="1" vertex="1">
           <mxGeometry x="500" y="460" width="40" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="l8VReH4v9SIAuaTgrEP8-1" value="Shit (&lt;u&gt;sid&lt;/u&gt;, amount, date, &lt;i&gt;uid&lt;/i&gt;)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="l8VReH4v9SIAuaTgrEP8-1" value="Shit (&lt;u&gt;sid&lt;/u&gt;, amount, date, &lt;i&gt;uid&lt;/i&gt;)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="500" y="60" width="190" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="l8VReH4v9SIAuaTgrEP8-2" value="User (&lt;u&gt;uid&lt;/u&gt;, firstname, lastname, birth)" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="l8VReH4v9SIAuaTgrEP8-2" value="User (&lt;u&gt;uid&lt;/u&gt;, firstname, lastname, birth)" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="520" y="30" width="210" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="l8VReH4v9SIAuaTgrEP8-3" value="Pee (&lt;u&gt;pid&lt;/u&gt;, amount, date, &lt;i&gt;uid&lt;/i&gt;)" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="l8VReH4v9SIAuaTgrEP8-3" value="Pee (&lt;u&gt;pid&lt;/u&gt;, amount, date, &lt;i&gt;uid&lt;/i&gt;)" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="520" y="90" width="170" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="l8VReH4v9SIAuaTgrEP8-4" value="Water (&lt;u&gt;wid&lt;/u&gt;, amount, date, &lt;i&gt;uid&lt;/i&gt;)" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="l8VReH4v9SIAuaTgrEP8-4" value="Water (&lt;u&gt;wid&lt;/u&gt;, amount, date, &lt;i&gt;uid&lt;/i&gt;)" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="520" y="120" width="170" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="l8VReH4v9SIAuaTgrEP8-8" value="Da es keine gestrichelte Unterstriche gibt, sind die Fk nur kursiv!" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="l8VReH4v9SIAuaTgrEP8-8" value="Da es keine gestrichelte Unterstriche gibt, sind die Fk nur kursiv!" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="520" y="160" width="270" height="20" as="geometry" />
         </mxCell>
       </root>
