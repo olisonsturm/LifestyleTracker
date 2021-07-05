@@ -1,7 +1,6 @@
 package we.chrisoli.lifestyletracker.model;
 
 
-
 import java.sql.Date;
 
 import we.chrisoli.lifestyletracker.db.DataAccess;
@@ -10,23 +9,22 @@ public class User {
 
     private static User user;
 
-    private String uid; // pk
+    private int uid; // pk
     private String firstname;
     private String lastname;
-    private Date birth;
 
     public static synchronized User getInstance() {
         DataAccess dataAccess = new DataAccess();
         if (user == null)
-            user = dataAccess.getUser("1");
+            user = new User();
         return user;
     }
 
-    public String getUid() {
+    public int getUid() {
         return uid;
     }
 
-    public void setUid(String uid) {
+    public int setUid(int uid) {
         this.uid = uid;
     }
 
@@ -46,11 +44,4 @@ public class User {
         this.lastname = lastname;
     }
 
-    public Date getBirth() {
-        return birth;
-    }
-
-    public void setBirth(Date birth) {
-        this.birth = birth;
-    }
 }

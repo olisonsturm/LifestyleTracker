@@ -43,9 +43,9 @@ public class HomeFragment extends Fragment {
 
         typeList = new ArrayList<>();
         DataAccess data = new DataAccess();
-        typeList.add(data.getWater(user));
-        typeList.add(data.getPee(user));
-        typeList.add(data.getShit(user));
+        //typeList.add(data.getWater(user));
+        //typeList.add(data.getPee(user));
+        //typeList.add(data.getShit(user));
         adapter = new HomeAdapter(getContext(), typeList);
 
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());

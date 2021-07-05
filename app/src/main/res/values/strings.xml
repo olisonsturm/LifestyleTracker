@@ -26,4 +26,7 @@
     <string name="login_failed">"Login failed"</string>
     <string name="lastname">Lastname</string>
     <string name="firstname">Firstname</string>
+    <string name="first_and_lastname">First- and lastname</string>
+    <string name="create_account">Create account</string>
+    <string name="cancle">Cancle</string>
 </resources>
