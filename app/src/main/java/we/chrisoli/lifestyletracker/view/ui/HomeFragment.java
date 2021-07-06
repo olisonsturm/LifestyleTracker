@@ -1,4 +1,4 @@
-package we.chrisoli.lifestyletracker.view.ui.home;
+package we.chrisoli.lifestyletracker.view.ui;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -21,7 +21,7 @@ import we.chrisoli.lifestyletracker.model.User;
 
 public class HomeFragment extends Fragment {
 
-    private User user;
+    DatabaseAccess db;
 
     private RecyclerView recyclerView;
     private HomeAdapter adapter;
@@ -31,15 +31,15 @@ public class HomeFragment extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
-        user = new User();
+        db = new DatabaseAccess(getContext());
 
         recyclerView = view.findViewById(R.id.recycler_view);
 
         typeList = new ArrayList<>();
-        DatabaseAccess db = new DatabaseAccess(getContext(), 0);
-        typeList.add(db.getWater(user));
-        typeList.add(db.getPee(user));
-        typeList.add(db.getShit(user));
+        typeList.add(db.getWater());
+        typeList.add(db.getPee());
+        typeList.add(db.getShit());
+        System.out.println("TEST: "+db.getWater().getAmount());
         adapter = new HomeAdapter(getContext(), typeList);
 
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());

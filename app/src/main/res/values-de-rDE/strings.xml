@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Lifestyle Tracker</string>
+    <string name="nav_header_title">Lifestyle Tracker</string>
+    <string name="action_settings">Einstellungen</string>
+    <string name="menu_yesterday">Gestern</string>
+    <string name="nav_header_subtitle">Kontrolliere dein Leben!</string>
+    <string name="nav_header_desc">Kontrolliere dein Leben!</string>
+    <string name="menu_all_time">Gesamt</string>
+    <string name="privacy">Datenschutz</string>
+    <string name="settings">Einstellungen</string>
+    <string name="update">Update</string>
+    <string name="about">Über</string>
+    <string name="menu_home">Startseite</string>
+    <string name="title_activity_login">Login</string>
+    <string name="prompt_email">Email</string>
+    <string name="navigation_drawer_open">Öffne navigation drawer</string>
+    <string name="navigation_drawer_close">Schließe navigation drawer</string>
+    <string name="stats">Statistiken</string>
+    <string name="invalid_username">Falscher Benutzername</string>
+    <string name="invalid_password">Falsches Passwort</string>
+    <string name="prompt_password">Passwort</string>
+    <string name="action_sign_in_short">Einloggen</string>
+    <string name="action_sign_in">Registrieren oder Einloggen</string>
+    <string name="login_failed">Einloggen Fehlgeschlagen</string>
+    <string name="lastname">Nachname</string>
+    <string name="firstname">Vorname</string>
+    <string name="first_and_lastname">Vor- und Nachname</string>
+    <string name="create_account">Erstelle Account</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="account_created">Account erstellt</string>
+    <string name="use_sqlite">Die App verwendet SQLite, eine Locale-Datenbank. Ihre Daten sind geschützt!</string>
+    <string name="about_message">Entwickelt von Christian und Olison</string>
+    <string name="update_message">Noch nicht möglich</string>
+    <string name="privacy_message">Ihre Daten sind geschützt! Die App verwendet SQLite, eine Locale-Datenbank.</string>
+    <string name="settings_message">Noch nicht möglich</string>
+</resources>

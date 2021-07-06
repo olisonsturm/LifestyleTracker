@@ -7,15 +7,20 @@ import android.widget.TextView;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 import we.chrisoli.lifestyletracker.R;
+import we.chrisoli.lifestyletracker.db.DatabaseAccess;
 import we.chrisoli.lifestyletracker.model.Type;
 import we.chrisoli.lifestyletracker.model.Water;
 
 class WaterViewHolder extends RecyclerView.ViewHolder {
 
     private List<Type> typeList;
+    private DatabaseAccess db;
 
     CardView card;
     TextView title;
@@ -32,6 +37,7 @@ class WaterViewHolder extends RecyclerView.ViewHolder {
         plus = view.findViewById(R.id.plus);
 
         this.typeList = typeList;
+        db = new DatabaseAccess(view.getContext());
     }
 
     void bindData(int position) {
@@ -39,14 +45,28 @@ class WaterViewHolder extends RecyclerView.ViewHolder {
         Water water = (Water) typeList.get(position);
 
         title.setText("Water");
-        amount.setText("1");
+        if (water.getAmount() < 1) {
+            amount.setText("0");
+        } else {
+            amount.setText(String.valueOf(water.getAmount()));
+        }
 
         minus.setOnClickListener(v -> {
-
+            water.setAmount(water.getAmount() - 1);
+            SimpleDateFormat formatter = new SimpleDateFormat(
+                    "dd.MM.yyyy");
+            water.setDate(formatter.format(new Date()));
+            db.setWater(water);
+            amount.setText(String.valueOf(water.getAmount()));
         });
 
         plus.setOnClickListener(v -> {
-
+            water.setAmount(water.getAmount() + 1);
+            SimpleDateFormat formatter = new SimpleDateFormat(
+                    "dd.MM.yyyy");
+            water.setDate(formatter.format(new Date()));
+            db.setWater(water);
+            amount.setText(String.valueOf(water.getAmount()));
         });
     }
 

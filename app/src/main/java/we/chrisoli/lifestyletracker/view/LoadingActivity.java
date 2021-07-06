@@ -30,17 +30,13 @@ public class LoadingActivity extends AppCompatActivity {
 
         // deklaration (bind)
         loading = findViewById(R.id.loading);
-        db = new DatabaseAccess(getBaseContext(), MODE_PRIVATE);
-
-        // Datenbank erstelen, wenn App erstes mal geöffnet wird
-        if (firstAppStart()) {
-            db.createDatabases();
-        }
+        db = new DatabaseAccess(getBaseContext());
 
         // login, wenn Account erstellt
         SharedPreferences prefStayLoggedIn = getSharedPreferences("loggedin", MODE_PRIVATE);
         if (prefStayLoggedIn.getBoolean("loggedin", true)) {
             startActivity(new Intent(getApplicationContext(), MainActivity.class));
+            finish();
         } else {
             login();
         }

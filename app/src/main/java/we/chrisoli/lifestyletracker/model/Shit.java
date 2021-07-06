@@ -2,8 +2,8 @@ package we.chrisoli.lifestyletracker.model;
 
 public class Shit implements Type {
 
-    int sid; // pk
-    String amount;
+    String sid; // pk
+    int amount;
     String date;
     String uid; // fk
 
@@ -11,26 +11,26 @@ public class Shit implements Type {
 
     }
 
-    public Shit(int sid, String amount, String date, String uid) {
+    public Shit(String sid, int amount, String date, String uid) {
         this.sid = sid;
         this.amount = amount;
         this.date = date;
         this.uid = uid;
     }
 
-    public int getSid() {
+    public String getSid() {
         return sid;
     }
 
-    public void setSid(int sid) {
+    public void setSid(String sid) {
         this.sid = sid;
     }
 
-    public String getAmount() {
+    public int getAmount() {
         return amount;
     }
 
-    public void setAmount(String amount) {
+    public void setAmount(int amount) {
         this.amount = amount;
     }
 

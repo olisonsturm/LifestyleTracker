@@ -1,35 +1,37 @@
 package we.chrisoli.lifestyletracker.model;
 
+import java.sql.Date;
+
 public class Water implements Type {
 
-    int wid; // pk
-    String amount;
+    String wid; // pk
+    int amount;
     String date;
     String uid; // fk
 
     public Water() {
     }
 
-    public Water(int wid, String amount, String date, String uid) {
+    public Water(String wid, int amount, String date, String uid) {
         this.wid = wid;
         this.amount = amount;
         this.date = date;
         this.uid = uid;
     }
 
-    public int getWid() {
+    public String getWid() {
         return wid;
     }
 
-    public void setWid(int wid) {
+    public void setWid(String wid) {
         this.wid = wid;
     }
 
-    public String getAmount() {
+    public int getAmount() {
         return amount;
     }
 
-    public void setAmount(String amount) {
+    public void setAmount(int amount) {
         this.amount = amount;
     }
 

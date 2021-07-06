@@ -2,8 +2,8 @@ package we.chrisoli.lifestyletracker.model;
 
 public class Pee implements Type {
 
-    int pid; // pk
-    String amount;
+    String pid; // pk
+    int amount;
     String date;
     String uid; // fk
 
@@ -11,26 +11,26 @@ public class Pee implements Type {
 
     }
 
-    public Pee(int pid, String amount, String date, String uid) {
+    public Pee(String pid, int amount, String date, String uid) {
         this.pid = pid;
         this.amount = amount;
         this.date = date;
         this.uid = uid;
     }
 
-    public int getPid() {
+    public String getPid() {
         return pid;
     }
 
-    public void setPid(int pid) {
+    public void setPid(String pid) {
         this.pid = pid;
     }
 
-    public String getAmount() {
+    public int getAmount() {
         return amount;
     }
 
-    public void setAmount(String amount) {
+    public void setAmount(int amount) {
         this.amount = amount;
     }
 
