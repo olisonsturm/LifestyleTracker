@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-07-06T12:09:18.009Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36" etag="W3Jp68zT2LErg6UAkW30" version="14.8.4" type="github">
+<mxfile host="app.diagrams.net" modified="2021-07-06T16:55:28.230Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36" etag="YaFd3XceK_MQuXFi2oT_" version="14.8.4" type="github">
   <diagram id="NWYkFUK9LSVxFtsLqtCG" name="Page-1">
-    <mxGraphModel dx="1750" dy="1544" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1935" dy="1619" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -200,7 +200,7 @@
         <mxCell id="Ti2GQdQaW2jY4-_UlOmM-24" value="+YesterdayViewModel()&#xa;+getText():LiveData&lt;String&gt; " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Ti2GQdQaW2jY4-_UlOmM-21" vertex="1">
           <mxGeometry y="60" width="210" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="Ti2GQdQaW2jY4-_UlOmM-70" value="DatabaseAccess" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+        <mxCell id="Ti2GQdQaW2jY4-_UlOmM-70" value="DataAccess" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
           <mxGeometry x="525" y="959" width="230" height="268" as="geometry">
             <mxRectangle x="415" y="960" width="110" height="26" as="alternateBounds" />
           </mxGeometry>
@@ -511,30 +511,30 @@
         <mxCell id="-dmJueuZtDUGm3YI3eYa-43" value="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="490" y="600" width="40" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="RaYx2sjUK4AAvabXIWK5-1" value="DatabaseAccess " style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+        <mxCell id="RaYx2sjUK4AAvabXIWK5-1" value="DatabaseAccess " style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
           <mxGeometry x="525" y="610" width="260" height="230" as="geometry">
             <mxRectangle x="550" y="920" width="130" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="RaYx2sjUK4AAvabXIWK5-2" value="-databaseUserName:String&#xa;-databaseUser:SQLiteDatabase &#xa;-databaseWaterName:String&#xa;-databaseWater:SQLiteDatabase &#xa;-databasePeeName:String &#xa;-databasePee:SQLiteDatabase&#xa;-databaseShitName:String &#xa;-databaseShit:SQLiteDatabase" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="RaYx2sjUK4AAvabXIWK5-1">
+        <mxCell id="RaYx2sjUK4AAvabXIWK5-2" value="-databaseUserName:String&#xa;-databaseUser:SQLiteDatabase &#xa;-databaseWaterName:String&#xa;-databaseWater:SQLiteDatabase &#xa;-databasePeeName:String &#xa;-databasePee:SQLiteDatabase&#xa;-databaseShitName:String &#xa;-databaseShit:SQLiteDatabase" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="RaYx2sjUK4AAvabXIWK5-1" vertex="1">
           <mxGeometry y="26" width="260" height="124" as="geometry" />
         </mxCell>
-        <mxCell id="RaYx2sjUK4AAvabXIWK5-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="RaYx2sjUK4AAvabXIWK5-1">
+        <mxCell id="RaYx2sjUK4AAvabXIWK5-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="RaYx2sjUK4AAvabXIWK5-1" vertex="1">
           <mxGeometry y="150" width="260" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="RaYx2sjUK4AAvabXIWK5-4" value="+DatabaseAccess(context, MODE_PRIVATE)&#xa;+createDatabases():void&#xa;+getUser(uid):User&#xa;+setUser(user):void&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="RaYx2sjUK4AAvabXIWK5-1">
+        <mxCell id="RaYx2sjUK4AAvabXIWK5-4" value="+DatabaseAccess(context, MODE_PRIVATE)&#xa;+createDatabases():void&#xa;+getUser(uid):User&#xa;+setUser(user):void&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="RaYx2sjUK4AAvabXIWK5-1" vertex="1">
           <mxGeometry y="158" width="260" height="72" as="geometry" />
         </mxCell>
-        <mxCell id="RaYx2sjUK4AAvabXIWK5-6" value="Speichert" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="RaYx2sjUK4AAvabXIWK5-6" value="Speichert" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="600" y="937" width="40" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="RaYx2sjUK4AAvabXIWK5-7" value="Übergibt" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="RaYx2sjUK4AAvabXIWK5-7" value="Übergibt" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="590" y="846" width="40" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="RaYx2sjUK4AAvabXIWK5-8" value="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="RaYx2sjUK4AAvabXIWK5-8" value="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="540" y="939" width="40" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="RaYx2sjUK4AAvabXIWK5-9" value="" style="endArrow=open;endFill=1;endSize=12;html=1;exitX=0.215;exitY=1.002;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="RaYx2sjUK4AAvabXIWK5-4" target="Ti2GQdQaW2jY4-_UlOmM-70">
+        <mxCell id="RaYx2sjUK4AAvabXIWK5-9" value="" style="endArrow=open;endFill=1;endSize=12;html=1;exitX=0.215;exitY=1.002;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" parent="1" source="RaYx2sjUK4AAvabXIWK5-4" target="Ti2GQdQaW2jY4-_UlOmM-70" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="490" y="980" as="sourcePoint" />
             <mxPoint x="650" y="980" as="targetPoint" />
