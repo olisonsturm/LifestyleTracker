@@ -28,5 +28,6 @@
     <string name="firstname">Firstname</string>
     <string name="first_and_lastname">First- and lastname</string>
     <string name="create_account">Create account</string>
-    <string name="cancle">Cancle</string>
+    <string name="cancel">Cancel</string>
+    <string name="account_created">Account created</string>
 </resources>
