@@ -1,3 +1,4 @@
+/*
 package we.chrisoli.lifestyletracker.db;
 
 import com.BoardiesITSolutions.AndroidMySQLConnector.Connection;
@@ -172,7 +173,8 @@ public class DataAccess {
 
     // --------------------------------------------------------------
     // Wasser
-    /*public Water getWater(User user) {
+    */
+/*public Water getWater(User user) {
         Water water = new Water();
 
         // Anfrage-Statement erzeugen
@@ -321,5 +323,6 @@ public class DataAccess {
         }
 
         return true;
-    }*/
-}
+    }*//*
+
+}*/

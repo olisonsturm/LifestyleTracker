@@ -14,7 +14,7 @@
         tools:replace="android:icon,android:roundIcon,android:theme">
         <activity
             android:name="we.chrisoli.lifestyletracker.view.LoadingActivity"
-            android:label="@string/title_activity_login"
+            android:label="@string/app_name"
             android:theme="@style/Theme.LifestyleTracker.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -2,7 +2,7 @@ package we.chrisoli.lifestyletracker.model;
 
 public class Water implements Type {
 
-    String wid; // pk
+    int wid; // pk
     String amount;
     String date;
     String uid; // fk
@@ -10,18 +10,18 @@ public class Water implements Type {
     public Water() {
     }
 
-    public Water(String wid, String amount, String date, String uid) {
+    public Water(int wid, String amount, String date, String uid) {
         this.wid = wid;
         this.amount = amount;
         this.date = date;
         this.uid = uid;
     }
 
-    public String getWid() {
+    public int getWid() {
         return wid;
     }
 
-    public void setWid(String wid) {
+    public void setWid(int wid) {
         this.wid = wid;
     }
 
