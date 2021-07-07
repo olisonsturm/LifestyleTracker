@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-07-07T18:00:04.294Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36" etag="n0DQXNfkDmEzlFqFDlx3" version="14.8.4" type="github">
+<mxfile host="app.diagrams.net" modified="2021-07-07T18:14:14.919Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36" etag="Rtx9_cuShusQjsUEjsGB" version="14.8.4" type="github">
   <diagram id="NWYkFUK9LSVxFtsLqtCG" name="Page-1">
-    <mxGraphModel dx="2997" dy="2294" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1695" dy="1619" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -127,7 +127,7 @@
         <mxCell id="Ti2GQdQaW2jY4-_UlOmM-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="Ti2GQdQaW2jY4-_UlOmM-1" vertex="1">
           <mxGeometry y="70" width="250" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="Ti2GQdQaW2jY4-_UlOmM-4" value="#onCreate(savedInstanceState):void&#xa;+onClick(view):void&#xa;+onCreateOptionsMenu(menu):boolean&#xa;+onSupportNavigateUp():boolean&#xa; " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Ti2GQdQaW2jY4-_UlOmM-1" vertex="1">
+        <mxCell id="Ti2GQdQaW2jY4-_UlOmM-4" value="#onCreate(savedInstanceState):void&#xa;+onSupportNavigateUp():boolean &#xa;+onBackPressed():void &#xa; " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Ti2GQdQaW2jY4-_UlOmM-1" vertex="1">
           <mxGeometry y="78" width="250" height="72" as="geometry" />
         </mxCell>
         <mxCell id="Ti2GQdQaW2jY4-_UlOmM-5" value="AllTimeFragment  " style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
@@ -135,13 +135,13 @@
             <mxRectangle x="190" y="192" width="160" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Ti2GQdQaW2jY4-_UlOmM-6" value="-allTimeViewModel;:AllTimeViewModel &#xa;-binding:FragmentAllTimeBinding " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Ti2GQdQaW2jY4-_UlOmM-5" vertex="1">
+        <mxCell id="Ti2GQdQaW2jY4-_UlOmM-6" value="-db:DatabaseAccess &#xa;-listView:ListView" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Ti2GQdQaW2jY4-_UlOmM-5" vertex="1">
           <mxGeometry y="26" width="340" height="44" as="geometry" />
         </mxCell>
         <mxCell id="Ti2GQdQaW2jY4-_UlOmM-7" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="Ti2GQdQaW2jY4-_UlOmM-5" vertex="1">
           <mxGeometry y="70" width="340" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="Ti2GQdQaW2jY4-_UlOmM-8" value="+onCreateView(inflater, container, savedInstanceState):View&#xa;+onChanged(s):void&#xa;+onDestroyView():void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Ti2GQdQaW2jY4-_UlOmM-5" vertex="1">
+        <mxCell id="Ti2GQdQaW2jY4-_UlOmM-8" value="+onCreateView(inflater, container, savedInstanceState):View&#xa;+onItemClick(adapterView, view, position, l):void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Ti2GQdQaW2jY4-_UlOmM-5" vertex="1">
           <mxGeometry y="78" width="340" height="62" as="geometry" />
         </mxCell>
         <mxCell id="Ti2GQdQaW2jY4-_UlOmM-13" value="HomeFragment " style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
@@ -149,7 +149,7 @@
             <mxRectangle x="-230" y="192" width="150" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Ti2GQdQaW2jY4-_UlOmM-14" value="-user:User&#xa;-recyclerView:RecyclerView&#xa;-adapter:HomeAdapter&#xa;-typeList:List&lt;Type&gt; " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Ti2GQdQaW2jY4-_UlOmM-13" vertex="1">
+        <mxCell id="Ti2GQdQaW2jY4-_UlOmM-14" value="+db:DatabaseAccess &#xa;-recyclerView:RecyclerView&#xa;-adapter:HomeAdapter&#xa;-typeList:List&lt;Type&gt; " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Ti2GQdQaW2jY4-_UlOmM-13" vertex="1">
           <mxGeometry y="26" width="340" height="64" as="geometry" />
         </mxCell>
         <mxCell id="Ti2GQdQaW2jY4-_UlOmM-15" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="Ti2GQdQaW2jY4-_UlOmM-13" vertex="1">
@@ -163,13 +163,13 @@
             <mxRectangle x="-55" y="192" width="150" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Ti2GQdQaW2jY4-_UlOmM-18" value="- yesterdayViewModel:YesterdayViewModel&#xa; -binding:FragmentYesterdayBinding" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Ti2GQdQaW2jY4-_UlOmM-17" vertex="1">
+        <mxCell id="Ti2GQdQaW2jY4-_UlOmM-18" value="-db:DatabaseAccess &#xa;-listView:ListView" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Ti2GQdQaW2jY4-_UlOmM-17" vertex="1">
           <mxGeometry y="26" width="340" height="64" as="geometry" />
         </mxCell>
         <mxCell id="Ti2GQdQaW2jY4-_UlOmM-19" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="Ti2GQdQaW2jY4-_UlOmM-17" vertex="1">
           <mxGeometry y="90" width="340" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="Ti2GQdQaW2jY4-_UlOmM-20" value="+onCreateView(inflater, container, savedInstanceState):View&#xa;+onChanged(s):void&#xa;+onDestroyView():void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Ti2GQdQaW2jY4-_UlOmM-17" vertex="1">
+        <mxCell id="Ti2GQdQaW2jY4-_UlOmM-20" value="+onCreateView(inflater, container, savedInstanceState):View&#xa;+onItemClick(adapterView, view, position, l):void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Ti2GQdQaW2jY4-_UlOmM-17" vertex="1">
           <mxGeometry y="98" width="340" height="62" as="geometry" />
         </mxCell>
         <mxCell id="Ti2GQdQaW2jY4-_UlOmM-70" value="DataAccess" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
