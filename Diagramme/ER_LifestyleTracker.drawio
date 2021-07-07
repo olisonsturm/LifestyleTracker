@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-07-07T17:23:33.551Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36" etag="g-SZRjPFM82yx5AXQRTv" version="14.8.4" type="github">
+<mxfile host="app.diagrams.net" modified="2021-07-07T17:25:59.807Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36" etag="eanRoKppYP8-AFcq0gHD" version="14.8.4" type="github">
   <diagram id="shyNUnFGkH95yPOg342h" name="Page-1">
-    <mxGraphModel dx="868" dy="450" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="496" dy="257" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -22,7 +22,7 @@
         <mxCell id="lOX9jsM3rJMvj_CDqlID-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="lOX9jsM3rJMvj_CDqlID-1" target="lOX9jsM3rJMvj_CDqlID-5" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="lOX9jsM3rJMvj_CDqlID-1" value="User" style="whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+        <mxCell id="lOX9jsM3rJMvj_CDqlID-1" value="user" style="whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="180" y="460" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="lOX9jsM3rJMvj_CDqlID-24" value="" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="lOX9jsM3rJMvj_CDqlID-2" target="lOX9jsM3rJMvj_CDqlID-23" edge="1">
@@ -37,7 +37,7 @@
         <mxCell id="lOX9jsM3rJMvj_CDqlID-49" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="lOX9jsM3rJMvj_CDqlID-2" target="lOX9jsM3rJMvj_CDqlID-48" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="lOX9jsM3rJMvj_CDqlID-2" value="Shit" style="whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+        <mxCell id="lOX9jsM3rJMvj_CDqlID-2" value="shit" style="whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="180" y="200" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="lOX9jsM3rJMvj_CDqlID-28" value="" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="lOX9jsM3rJMvj_CDqlID-4" target="lOX9jsM3rJMvj_CDqlID-27" edge="1">
@@ -52,7 +52,7 @@
         <mxCell id="lOX9jsM3rJMvj_CDqlID-41" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="lOX9jsM3rJMvj_CDqlID-4" target="lOX9jsM3rJMvj_CDqlID-40" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="lOX9jsM3rJMvj_CDqlID-4" value="Water" style="whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+        <mxCell id="lOX9jsM3rJMvj_CDqlID-4" value="water" style="whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="180" y="690" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="lOX9jsM3rJMvj_CDqlID-30" value="" style="orthogonalLoop=1;jettySize=auto;html=1;rounded=0;" parent="1" source="lOX9jsM3rJMvj_CDqlID-5" target="lOX9jsM3rJMvj_CDqlID-29" edge="1">
@@ -67,7 +67,7 @@
         <mxCell id="lOX9jsM3rJMvj_CDqlID-72" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="lOX9jsM3rJMvj_CDqlID-5" target="lOX9jsM3rJMvj_CDqlID-50" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="lOX9jsM3rJMvj_CDqlID-5" value="Pee" style="whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+        <mxCell id="lOX9jsM3rJMvj_CDqlID-5" value="pee" style="whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="530" y="460" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="lOX9jsM3rJMvj_CDqlID-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" edge="1">
@@ -139,16 +139,16 @@
         <mxCell id="lOX9jsM3rJMvj_CDqlID-71" value="n" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="1" vertex="1">
           <mxGeometry x="500" y="460" width="40" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="l8VReH4v9SIAuaTgrEP8-1" value="&lt;font style=&quot;font-size: 14px&quot;&gt;Shit (&lt;b&gt;sid&lt;/b&gt;, amount, date, &lt;u&gt;uid&lt;/u&gt;)&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+        <mxCell id="l8VReH4v9SIAuaTgrEP8-1" value="&lt;font style=&quot;font-size: 14px&quot;&gt;shit (&lt;b&gt;sid&lt;/b&gt;, amount, date, &lt;u&gt;uid&lt;/u&gt;)&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="485" y="70" width="190" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="l8VReH4v9SIAuaTgrEP8-2" value="&lt;font style=&quot;font-size: 14px&quot;&gt;User (&lt;b&gt;uid&lt;/b&gt;, firstname, lastname, birth)&lt;/font&gt;" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="l8VReH4v9SIAuaTgrEP8-2" value="&lt;font style=&quot;font-size: 14px&quot;&gt;user (&lt;b&gt;uid&lt;/b&gt;, firstname, lastname, birth)&lt;/font&gt;" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="490" y="40" width="240" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="l8VReH4v9SIAuaTgrEP8-3" value="&lt;font style=&quot;font-size: 14px&quot;&gt;Pee (&lt;b&gt;pid&lt;/b&gt;, amount, date, &lt;u&gt;uid&lt;/u&gt;)&lt;/font&gt;" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="l8VReH4v9SIAuaTgrEP8-3" value="&lt;font style=&quot;font-size: 14px&quot;&gt;pee (&lt;b&gt;pid&lt;/b&gt;, amount, date, &lt;u&gt;uid&lt;/u&gt;)&lt;/font&gt;" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="490" y="90" width="180" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="l8VReH4v9SIAuaTgrEP8-4" value="&lt;font style=&quot;font-size: 14px&quot;&gt;Water (&lt;b&gt;wid&lt;/b&gt;, amount, date, &lt;u&gt;uid&lt;/u&gt;)&lt;/font&gt;" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="l8VReH4v9SIAuaTgrEP8-4" value="&lt;font style=&quot;font-size: 14px&quot;&gt;water (&lt;b&gt;wid&lt;/b&gt;, amount, date, &lt;u&gt;uid&lt;/u&gt;)&lt;/font&gt;" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="490" y="110" width="200" height="30" as="geometry" />
         </mxCell>
       </root>
